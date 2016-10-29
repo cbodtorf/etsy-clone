@@ -1,4 +1,14 @@
-const Backbone = require('Backbone')
+import $ from 'jquery'
+import Backbone from 'backbone'
 
-console.log(Backbone)
-document.querySelector('#app-container').innerHTML = `<h1>YOLO</h1>`
+import Router from './router'
+
+
+document.querySelector('#app-container').innerHTML = `<h5>HANS YOLO</h5>`
+
+
+window.addEventListener('load', () => {
+  let router = new Router()
+
+  Backbone.history.start()
+})
